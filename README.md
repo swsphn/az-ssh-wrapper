@@ -28,11 +28,17 @@ https://github.com/Azure/azure-cli-extensions/issues/7285
 
 Install with `pip`, `pipx` or `uv tool`
 
-    pip install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
+pip install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
 
-    pipx install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
+pipx install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
 
-    uv tool install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
+uv tool install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
+```
 
 ## Examples
 
