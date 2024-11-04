@@ -23,6 +23,7 @@ https://github.com/Azure/azure-cli-extensions/issues/7285
 - An Azure VM with the `AADSSHLoginForLinux` VM extension installed.
 - An Entra account with the `Virtual Machine Administrator Login` or
   `Virtual Machine User Login` role configured for the VM.
+- Linux or WSL
 
 ## Install
 
