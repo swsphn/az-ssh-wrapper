@@ -25,7 +25,23 @@ https://github.com/Azure/azure-cli-extensions/issues/7285
   `Virtual Machine User Login` role configured for the VM.
 - Linux or WSL
 
-## Install
+## Install from PyPI
+
+Install with `pip`, `pipx` or `uv tool`.
+
+```
+pip install az-ssh-wrapper
+```
+
+```
+pipx install az-ssh-wrapper
+```
+
+```
+uv tool install az-ssh-wrapper
+```
+
+## Install latest development version from GitHub
 
 Install with `pip`, `pipx` or `uv tool`
 
