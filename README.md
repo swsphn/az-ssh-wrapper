@@ -41,6 +41,9 @@ pipx install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
 uv tool install az-ssh-wrapper@git+https://github.com/swsphn/az-ssh-wrapper.git
 ```
 
+Note: While the package is called `az-ssh-wrapper`, the installed
+executable is called `az-ssh`.
+
 ## Examples
 
 If you can already connect to a VM using the following Azure CLI
@@ -71,5 +74,7 @@ In contrast, Az SSH Wrapper allows you to use the standard SSH form:
 After installing this package you can simply specify
 `ansible_ssh_executable = az-ssh`, and it will automatically connect to
 the VM using your Azure credentials with your existing Azure CLI login.
+For example, you could configure this as a variable in your hosts
+inventory file.
 
 [azure-cli]: https://learn.microsoft.com/en-gb/cli/azure/install-azure-cli
