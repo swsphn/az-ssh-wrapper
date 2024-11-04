@@ -3,7 +3,7 @@ name = "az-ssh-wrapper"
 version = "0.1.0"
 description = "SSH Wrapper for Azure CLI's `az ssh` command"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = []
 
 [project.scripts]
