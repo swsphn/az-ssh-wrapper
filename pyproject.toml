@@ -1,10 +1,20 @@
 [project]
 name = "az-ssh-wrapper"
+authors = [
+  {name = "David Wales", email = "david.wales@swsphn.com.au"}
+]
 version = "1.0.0"
 description = "SSH Wrapper for Azure CLI's `az ssh` command"
 readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.9"
 dependencies = []
+
+keywords = ["azure", "ssh", "ansible", "wrapper"]
+
+[project.urls]
+Repository = "https://github.com/swsphn/az-ssh-wrapper"
+"Bug Tracker" = "https://github.com/swsphn/az-ssh-wrapper/issues"
 
 [project.scripts]
 az-ssh = "az_ssh_wrapper:main"
