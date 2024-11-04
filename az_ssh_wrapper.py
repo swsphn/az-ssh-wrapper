@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+# SPDX-FileCopyrightText: © 2024 David Wales, South Western Sydney Primary Health Network
+#
+# SPDX-License-Identifier: MIT
+
 import getopt
 import os
 import shutil
