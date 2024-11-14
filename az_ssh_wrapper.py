@@ -67,8 +67,16 @@ def main():
     # Work around quoting issue on Windows (still works on Linux)
     az_path = f'"{az_path}"'
 
-    ssh_opts = [" ".join(opt) for opt in filter(opt_filter, opts)]
-    exec_args = [az_path, "ssh", "vm", "--ip", destination, "--", *ssh_opts, *args]
+    ssh_opts = []
+    for opt in filter(opt_filter, opts):
+        # Only keep truthy options. e.g.
+        # ('-t', '') --> ('t',)
+        # (Yes, this is important.)
+        ssh_opts += filter(lambda o: o, opt)
+
+    exec_args = [az_path, "ssh", "vm", "--ip", destination]
+    if ssh_opts or args:
+        exec_args.extend(["--", *ssh_opts, *args])
 
     os.execvp("az", exec_args)
 

@@ -3,7 +3,7 @@ name = "az-ssh-wrapper"
 authors = [
   {name = "David Wales", email = "david.wales@swsphn.com.au"}
 ]
-version = "1.0.2"
+version = "1.0.3"
 description = "SSH Wrapper for Azure CLI's `az ssh` command"
 readme = "README.md"
 license = {file = "LICENSE"}
