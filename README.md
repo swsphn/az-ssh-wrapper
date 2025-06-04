@@ -86,12 +86,24 @@ In contrast, Az SSH Wrapper allows you to use the standard SSH form:
 
     az-ssh 1.2.3.4 date
 
-## Use with Ansible
+### Use with Ansible
 
 After installing this package you can simply specify
 `ansible_ssh_executable = az-ssh`, and it will automatically connect to
 the VM using your Azure credentials with your existing Azure CLI login.
 For example, you could configure this as a variable in your hosts
 inventory file.
+
+### Use with `scp`
+
+Use `-S az-ssh` to instruct `scp` to use `az-ssh`:
+
+    scp -S az-ssh testfile azure-vm.example.com:
+
+### Use with `rsync`
+
+Use `-e az-ssh` to use `az-ssh` with `rsync`:
+
+    rsync -e az-ssh --progress testfile azure-vm.example.com:
 
 [azure-cli]: https://learn.microsoft.com/en-gb/cli/azure/install-azure-cli
